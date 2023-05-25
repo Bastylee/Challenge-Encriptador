@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #f3f5fc;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto {
+    position: relative;
+    width: 80%;
+    max-width: 500px;
+    height: 180px;
+    border: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    background-color: #f3f5fc;
+    margin: 20px 0;
+    resize: none;
+}
+
+.texto::placeholder {
+    color: #0a3871;
+}
+
+.texto:focus,
+.texto:active {
+    border: none;
+    outline: none;
+}
+
+.terminos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.terminos p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1% 0;
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.btn-encriptar {
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    flex: 1;
+    background-color: #0a3871;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.btn-desencriptar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8%;
+    flex: 1;
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;
+}
+
+.btn-desencriptar:hover,
+.btn-encriptar:hover {
+    margin: 0.3%;
+    padding: 1.8%;
+}
+
+.encriptado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    max-width: 500px;
+    height: 80%;
+    background: #fff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    margin: 20px;
+}
+
+.img-muneco {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 16px;
+}
+
+.mensaje-encriptado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+}
+
+#titulo-mensaje {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #0a3871;
+}
+
+#parrafo {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #495057;
+    opacity: 0.8;
+    margin-bottom: 24px;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    max-width: 500px;
+    height: 80%;
+    background: #fff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    margin: 20px;
+}
+
+.texto-encriptado {
+    width: 80%;
+    max-width: 400px;
+    height: 120px;
+    resize: none;
+    border: 1px solid #0a3871;
+    border-radius: 8px;
+    padding: 8px;
+    font-family: "Inter";
+    font-size: 16px;
+    line-height: 20px;
+    color: #0a3871;
+    margin-bottom: 16px;
+}
+
+.btn-copiar-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn-copiar {
+    padding: 8px 16px;
+    background-color: #0a3871;
+    border: none;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.btn-copiar:hover {
+    background-color: #064c96;
+}
+
+/* Estilos para dispositivos móviles */
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .encriptado,
+    .resultado {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+}
